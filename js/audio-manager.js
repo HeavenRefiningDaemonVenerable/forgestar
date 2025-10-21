@@ -130,10 +130,10 @@ export const audioManager = new AudioManager();
 
 export async function initAudio() {
     try {
-        await audioManager.loadSound('click1', '../sounds/click1.wav');
-        await audioManager.loadSound('click2', '../sounds/click2.wav');
-        await audioManager.loadSound('achievement', '../sounds/achievement.wav');
-        await audioManager.loadMusic('../sounds/background-music.mp3');
+        await audioManager.loadSound('click1', 'sounds/click1.wav');
+        await audioManager.loadSound('click2', 'sounds/click2.wav');
+        await audioManager.loadSound('achievement', 'sounds/achievement.wav');
+        await audioManager.loadMusic('sounds/background-music.mp3');
         audioManager.playMusic();
         console.log('Audio loaded successfully!');
     } catch (error) {
