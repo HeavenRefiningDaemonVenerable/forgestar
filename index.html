@@ -18,23 +18,7 @@
             console.error('Module failed to load, reloading...');
             location.reload();
         }
-    }, 2300);
-
-    function errorPrints() {
-    // Catches synchronous and asynchronous errors that are not caught elsewhere
-     window.addEventListener('error', (event) => {
-        console.error('Global error caught:', event.message, event.error || event);
-      });
-
-    // Catches unhandled Promise rejections
-      window.addEventListener('unhandledrejection', (event) => {
-        console.error('Unhandled Promise rejection:', event.reason);
-      });
-
-      console.log('Global error listeners attached.');
-   }
-    errorPrints()
-
+    }, 1200);
 </script>
 <script type="module" src="./js/script.js"></script>
 </head>
@@ -45,7 +29,5 @@
         </header>
     <div class="app"id="app"></div>
     <audio id="click-sound" controls preload="auto" style="display: none"></audio>
-<script src="//cdn.jsdelivr.net/npm/eruda"></script>
-<script>eruda.init();</script>
 </body>
 </html>
